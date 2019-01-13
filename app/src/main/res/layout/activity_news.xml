@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".map">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.37"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/map_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.45"
+                    android:text="@string/news_title"
+                    android:textColor="@color/loading_inside_backcolor"
+                    android:textSize="30sp"
+                    app:fontFamily="monospace"
+                    app:layout_constraintBottom_toTopOf="@+id/map" />
+
+                <TextView
+                    android:id="@+id/news_tip"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.30"
+                    android:text="@string/news_tip"
+                    android:textColor="@color/loading_inside_backcolor"
+                    android:textSize="15sp"
+                    app:fontFamily="monospace"
+                    app:layout_constraintBottom_toTopOf="@+id/map" />
+            </LinearLayout>
+
+
+            <ListView
+                android:id="@+id/listview_news"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.45" />
+
+            <TextView
+                android:id="@+id/bottom_text"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="0.18"
+                android:text="@string/chineseAppName"
+                android:textColor="@color/loading_outside_backcolor"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+
+</android.support.constraint.ConstraintLayout>

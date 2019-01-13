@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#d81b60</color>
+    <color name="loading_inside_backcolor">#99d2c1</color>
+    <color name="loading_outside_backcolor">#d0e9e4</color>
+    <color name="no_background_color">#00ffffff</color>
+    <color name="small_warning_btn">#e83639</color>
+    <color name="warning_progress_bar_color">#c2c2c2</color>
+</resources>

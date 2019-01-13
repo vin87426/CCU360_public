@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".map">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.37"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/info_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.45"
+                    android:text="@string/info_title"
+                    android:textColor="@color/loading_inside_backcolor"
+                    android:textSize="30sp"
+                    app:fontFamily="monospace" />
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/contencrollView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.45">
+
+                <LinearLayout
+                    android:id="@+id/info_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.45"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/info_subtitle1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="1.車禍該怎麼處理？"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/loading_outside_backcolor"/>
+
+                    <TextView
+                        android:id="@+id/info_subtext1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/loading_outside_backcolor"
+                        android:padding="20dp"
+                        android:visibility="gone"
+                        android:text="應通報校園警衛或自行通報警消醫院等等。\n\n警衛室報案專線:(05)2721034\n警衛室報案分機:(05)2720411轉11111\n\n民雄分局:(05)2262014\n豐收派出所:(05)2262732\n\n中正大學健康中心:(05)2720411\n大林慈濟急診室:(05)2648000"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/info_subtitle2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="2.受傷了該怎麼辦？"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/loading_outside_backcolor"/>
+
+                    <TextView
+                        android:id="@+id/info_subtext2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/loading_outside_backcolor"
+                        android:padding="20dp"
+                        android:visibility="gone"
+                        android:text="可尋求校內健康中心的協助或就醫。\n\n中正大學健康中心:(05)2720411\n大林慈濟急診室:(05)2648000\n民雄成功醫院:(05)2263041\n嘉義嘉基急診室:(05)2765041轉1990、1991、1992、1993"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/info_subtitle3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="3.遭遇緊急事件！"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/loading_outside_backcolor"/>
+
+                    <TextView
+                        android:id="@+id/info_subtext3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/loading_outside_backcolor"
+                        android:padding="20dp"
+                        android:visibility="gone"
+                        android:text="直接使用本應用程式的通報功能。\n點擊右下角的紅圈「緊急通報」以使用。\n\n警衛室報案專線:(05)2721034\n警衛室報案分機:(05)2720411轉11111\n教官值勤電話:(05)2721114\n生活事務組專線:(05)2721673\n兩性報案窗口:(05)2720411轉12105\n\n民雄分局:(05)2262014\n豐收派出所:(05)2262732"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/info_subtitle4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="4.緊急聯絡電話一覽表"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/loading_outside_backcolor"/>
+
+                    <TextView
+                        android:id="@+id/info_subtext4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/loading_outside_backcolor"
+                        android:padding="20dp"
+                        android:visibility="gone"
+                        android:text="校內緊急報案電話:\n警衛室報案專線:(05)2721034\n警衛室報案分機:(05)2720411轉11111\n教官值勤電話:(05)2721114\n生活事務組專線:(05)2721673\n兩性報案窗口:(05)2720411轉12105\n\n醫療院所:\n中正大學健康中心:(05)2720411\n大林慈濟急診室:(05)2648000\n民雄成功醫院:(05)2263041\n嘉義嘉基急診室:(05)2765041轉1990、1991、1992、1993\n\n警局、派出所:\n民雄分局:(05)2262014\n豐收派出所:(05)2262732"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </ScrollView>
+
+            <TextView
+                android:id="@+id/bottom_text"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="0.18"
+                android:text="@string/chineseAppName"
+                android:textColor="@color/loading_outside_backcolor"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+
+</android.support.constraint.ConstraintLayout>

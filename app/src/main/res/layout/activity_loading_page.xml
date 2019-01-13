@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/loading_outside_backcolor"
+    tools:context=".Loading_page">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@color/loading_inside_backcolor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/loadingAnimation"
+            android:layout_width="100dp"
+            android:layout_height="189dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="25dp"
+            app:srcCompat="@drawable/loadingpipeapple" />
+
+        <ImageView
+            android:id="@+id/loadingtitleView"
+            android:layout_width="141dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="105dp"
+            app:srcCompat="@drawable/loadingtitle" />
+
+        <ImageView
+            android:id="@+id/loadingtextView"
+            android:layout_width="210dp"
+            android:layout_height="94dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            app:srcCompat="@drawable/loadingtext" />
+
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

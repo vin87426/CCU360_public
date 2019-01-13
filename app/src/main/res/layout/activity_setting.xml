@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".map">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.37"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+                <TextView
+                    android:id="@+id/set_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setting_title"
+                    android:textColor="@color/loading_inside_backcolor"
+                    android:textSize="30sp"
+                    app:fontFamily="monospace" />
+
+                <TextView
+                    android:id="@+id/set_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/loading_inside_backcolor"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    app:fontFamily="monospace" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/set_list0"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.45"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/L0"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/loading_outside_backcolor"
+                        android:padding="10dp"
+                        android:text="姓名"
+                        android:textColor="#595959"
+                        android:textSize="18sp"
+                        app:fontFamily="monospace" />
+
+                    <EditText
+                        android:id="@+id/R0"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/loading_outside_backcolor"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        android:hint="先生/小姐"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="#000000"
+                        android:textColorHint="#00A29A"
+                        android:textSize="18sp"
+                        app:fontFamily="monospace" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/L1"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:padding="10dp"
+                        android:text="性別"
+                        android:textColor="#595959"
+                        android:textFontWeight="light"
+                        android:textSize="18sp"
+                        app:fontFamily="monospace" />
+
+                    <EditText
+                        android:id="@+id/R1"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        android:hint="男/女"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="#000000"
+                        android:textColorHint="#00A29A"
+                        android:textSize="18sp"
+                        app:fontFamily="monospace" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/L2"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/loading_outside_backcolor"
+                        android:padding="10dp"
+                        android:text="電話"
+                        android:textColor="#595959"
+                        android:textSize="18sp"
+                        app:fontFamily="monospace" />
+
+                    <EditText
+                        android:id="@+id/R2"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/loading_outside_backcolor"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        android:hint="09xx-xxx-xxx"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="#000000"
+                        android:textColorHint="#00A29A"
+                        android:textSize="18sp"
+                        app:fontFamily="monospace" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/L3"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:padding="10dp"
+                        android:text="系級"
+                        android:textColor="#595959"
+                        android:textFontWeight="light"
+                        android:textSize="18sp"
+                        app:fontFamily="monospace" />
+
+                    <EditText
+                        android:id="@+id/R3"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        android:hint="(可不填)"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="#000000"
+                        android:textColorHint="#aaaaaa"
+                        android:textSize="18sp"
+                        app:fontFamily="monospace" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/L4"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/loading_outside_backcolor"
+                        android:padding="10dp"
+                        android:text="學號"
+                        android:textColor="#595959"
+                        android:textSize="18sp"
+                        app:fontFamily="monospace" />
+
+                    <EditText
+                        android:id="@+id/R4"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/loading_outside_backcolor"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        android:hint="(可不填)"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="#000000"
+                        android:textColorHint="#aaaaaa"
+                        android:textSize="18sp"
+                        app:fontFamily="monospace" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/L5"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:padding="10dp"
+                        android:text="生日"
+                        android:textColor="#595959"
+                        android:textFontWeight="light"
+                        android:textSize="18sp"
+                        app:fontFamily="monospace" />
+
+                    <EditText
+                        android:id="@+id/R5"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        android:hint="19xx/xx/xx"
+                        android:inputType="date"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="#000000"
+                        android:textColorHint="#00A29A"
+                        android:textSize="18sp"
+                        app:fontFamily="monospace" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/L6"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/loading_outside_backcolor"
+                        android:padding="10dp"
+                        android:text="血型"
+                        android:textColor="#595959"
+                        android:textSize="18sp"
+                        app:fontFamily="monospace" />
+
+                    <EditText
+                        android:id="@+id/R6"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/loading_outside_backcolor"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        android:hint="A/B/O/AB"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="#000000"
+                        android:textColorHint="#00A29A"
+                        android:textSize="18sp"
+                        app:fontFamily="monospace" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_base"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@color/loading_inside_backcolor"
+                    android:text="確定保存" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/set_list1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.0"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+            </ListView>
+
+            <ListView
+                android:id="@+id/set_list2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.45"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+            </ListView>
+
+            <LinearLayout
+                android:id="@+id/set_list3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.45"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <CheckBox
+                    android:id="@+id/news_check"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="接收推播通知"
+                    android:textSize="16sp"
+                    android:padding="20dp"
+                    />
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/set_list4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.45"
+                android:visibility="gone">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:background="@color/loading_outside_backcolor"
+                        android:text="開發人員名單"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:text="胡竣賓\n石佳穎\n羅佳鴻\n鄭佾彤\n楊晴晴\n呂方棋\n蘇柏瑋\n謝柏威\n馬培馨\n傅正宏"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:background="@color/loading_outside_backcolor"
+                        android:text="發布日期"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:text="2019-01-01"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:background="@color/loading_outside_backcolor"
+                        android:text="版本"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp"
+                        android:text="1.0"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+            </ScrollView>
+
+            <ListView
+                android:id="@+id/listview_setting"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.45"
+                />
+
+            <LinearLayout
+                android:id="@+id/set_list1_a"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.6"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/loading_inside_backcolor" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="所選擇的聯絡人為緊急通報簡訊接收人"
+                    android:textColor="@color/loading_inside_backcolor"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btn_newcontact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    android:background="@color/loading_inside_backcolor"
+                    android:text="新增聯絡人"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/bottom_text"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="0.18"
+                android:text="@string/chineseAppName"
+                android:textColor="@color/loading_outside_backcolor"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+
+</android.support.constraint.ConstraintLayout>

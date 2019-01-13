@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">CCU360</string>
+    <string name="chineseAppName">中 正 360</string>
+    <string name="title_activity_warning">warning</string>
+    <string name="push_2_second">長按2秒通話</string>
+    <string name="cancel_text">掛斷/取消</string>
+
+    <string name="title_activity_map">map</string>
+    <string name="map_title">校安地圖</string>
+    <string name="news_title">消息推播</string>
+    <string name="info_title">小幫手</string>
+    <string name="setting_title">設定</string>
+    <string name="news_tip">點擊消息查看詳細</string>
+    <string name="btn_1">AED</string>
+    <string name="btn_2">緊急電話</string>
+    <string name="btn_3">保健室</string>
+    <string name="title_activity_news">news</string>
+    <string name="title_activity_setting">setting</string>
+    <string name="title_activity_notice">notice</string>
+    <string name="title_activity_info">info</string>
+    <string name="title_activity_test_rrrrrrr">testRRRRRRR</string>
+    <string name="title_activity_warn_arrow">warn_arrow</string>
+
+    <string name="name">Name</string>
+    <string name="blood">Blood</string>
+    <string name="gender">Gender</string>
+    <string name="add">Add</string>
+    <string name="list">List</string>
+
+</resources>
